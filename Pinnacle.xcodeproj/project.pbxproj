@@ -1,0 +1,935 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64C839AA2D7B3010008E24A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839A92D7B3010008E24A4 /* AppDelegate.swift */; };
+		64C839AC2D7B3010008E24A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839AB2D7B3010008E24A4 /* SceneDelegate.swift */; };
+		64C839AE2D7B3010008E24A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839AD2D7B3010008E24A4 /* ViewController.swift */; };
+		64C839B12D7B3010008E24A4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 64C839B02D7B3010008E24A4 /* Base */; };
+		64C839B32D7B3011008E24A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C839B22D7B3011008E24A4 /* Assets.xcassets */; };
+		64C839B62D7B3011008E24A4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 64C839B52D7B3011008E24A4 /* Base */; };
+		64C839C02D7B3548008E24A4 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839BF2D7B3548008E24A4 /* AuthView.swift */; };
+		64C839C22D7B354D008E24A4 /* RegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839C12D7B354D008E24A4 /* RegView.swift */; };
+		64C839C52D7B3AD6008E24A4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839C42D7B3AD6008E24A4 /* MainView.swift */; };
+		64C839C82D7B3B8B008E24A4 /* TabMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839C72D7B3B8B008E24A4 /* TabMainView.swift */; };
+		64C839CA2D7B5C44008E24A4 /* LargeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839C92D7B5C44008E24A4 /* LargeCell.swift */; };
+		64C839CD2D7B6952008E24A4 /* SportTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839CC2D7B6952008E24A4 /* SportTypeView.swift */; };
+		64C839D02D7B6B3B008E24A4 /* SavedReservesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839CF2D7B6B3B008E24A4 /* SavedReservesView.swift */; };
+		64C839D32D7B6C53008E24A4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839D22D7B6C53008E24A4 /* ProfileView.swift */; };
+		64C839D62D7F1BE9008E24A4 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839D52D7F1BE9008E24A4 /* Training.swift */; };
+		64C839D92D7F1BF8008E24A4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839D82D7F1BF8008E24A4 /* DataManager.swift */; };
+		64C839DB2D7F1E4B008E24A4 /* SmallTrainingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839DA2D7F1E4B008E24A4 /* SmallTrainingCell.swift */; };
+		64C839DE2D7F23EF008E24A4 /* TrainingReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839DD2D7F23EF008E24A4 /* TrainingReservationView.swift */; };
+		64C839E12D7F2D18008E24A4 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839E02D7F2D18008E24A4 /* CustomAlert.swift */; };
+		64C839E42D7F303F008E24A4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 64C839E32D7F303F008E24A4 /* RealmSwift */; };
+		64C839E52D7F3050008E24A4 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 64C839E32D7F303F008E24A4 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		64C839E92D7F3061008E24A4 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839E82D7F3061008E24A4 /* RealmManager.swift */; };
+		64C839EC2D7F874D008E24A4 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839EB2D7F874D008E24A4 /* NotificationsView.swift */; };
+		64C839EF2D804E4D008E24A4 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839EE2D804E4D008E24A4 /* NewsView.swift */; };
+		64C839F12D805904008E24A4 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839F02D805904008E24A4 /* NewsCell.swift */; };
+		64C839F32D80599E008E24A4 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839F22D80599E008E24A4 /* NewsDetailView.swift */; };
+		64C839F62D805C47008E24A4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839F52D805C47008E24A4 /* OnboardingView.swift */; };
+		64C839F82D80638F008E24A4 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839F72D80638F008E24A4 /* AuthViewModel.swift */; };
+		64C839FB2D8063AC008E24A4 /* PointOfStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839FA2D8063AC008E24A4 /* PointOfStartView.swift */; };
+		64C839FE2D806444008E24A4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 64C839FD2D806444008E24A4 /* FirebaseAuth */; };
+		64C83A002D806444008E24A4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 64C839FF2D806444008E24A4 /* FirebaseFirestore */; };
+		64C83A162D81A62A008E24A4 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = 64C83A152D81A62A008E24A4 /* SdkPushExpress */; };
+		64C83A192D81A635008E24A4 /* FlagsmithClient in Frameworks */ = {isa = PBXBuildFile; productRef = 64C83A182D81A635008E24A4 /* FlagsmithClient */; };
+		64C83A212D81A641008E24A4 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C83A202D81A641008E24A4 /* NotificationService.swift */; };
+		64C83A252D81A641008E24A4 /* notificationvc.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 64C83A1E2D81A641008E24A4 /* notificationvc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		64C83A2A2D81A653008E24A4 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = 64C83A292D81A653008E24A4 /* SdkPushExpress */; };
+		64C83A2E2D81AA7E008E24A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64C83A2D2D81AA7E008E24A4 /* GoogleService-Info.plist */; };
+		F1088FB35876680849D9795A /* Pods_Pinnacle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9BC2C54ADA38CD766A1DA6 /* Pods_Pinnacle.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64C83A232D81A641008E24A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64C8399E2D7B3010008E24A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64C83A1D2D81A641008E24A4;
+			remoteInfo = notificationvc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64C839E62D7F3050008E24A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				64C839E52D7F3050008E24A4 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C83A132D81A5C1008E24A4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				64C83A252D81A641008E24A4 /* notificationvc.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		35BF340DF6FC50BB262717CF /* Pods-Pinnacle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinnacle.release.xcconfig"; path = "Target Support Files/Pods-Pinnacle/Pods-Pinnacle.release.xcconfig"; sourceTree = "<group>"; };
+		64C839A62D7B3010008E24A4 /* Pinnacle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinnacle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C839A92D7B3010008E24A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64C839AB2D7B3010008E24A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		64C839AD2D7B3010008E24A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64C839B02D7B3010008E24A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64C839B22D7B3011008E24A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64C839B52D7B3011008E24A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64C839B72D7B3011008E24A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64C839BF2D7B3548008E24A4 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		64C839C12D7B354D008E24A4 /* RegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegView.swift; sourceTree = "<group>"; };
+		64C839C42D7B3AD6008E24A4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		64C839C72D7B3B8B008E24A4 /* TabMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMainView.swift; sourceTree = "<group>"; };
+		64C839C92D7B5C44008E24A4 /* LargeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCell.swift; sourceTree = "<group>"; };
+		64C839CC2D7B6952008E24A4 /* SportTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTypeView.swift; sourceTree = "<group>"; };
+		64C839CF2D7B6B3B008E24A4 /* SavedReservesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedReservesView.swift; sourceTree = "<group>"; };
+		64C839D22D7B6C53008E24A4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		64C839D52D7F1BE9008E24A4 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		64C839D82D7F1BF8008E24A4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		64C839DA2D7F1E4B008E24A4 /* SmallTrainingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTrainingCell.swift; sourceTree = "<group>"; };
+		64C839DD2D7F23EF008E24A4 /* TrainingReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingReservationView.swift; sourceTree = "<group>"; };
+		64C839E02D7F2D18008E24A4 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		64C839E82D7F3061008E24A4 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		64C839EB2D7F874D008E24A4 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		64C839EE2D804E4D008E24A4 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		64C839F02D805904008E24A4 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		64C839F22D80599E008E24A4 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
+		64C839F52D805C47008E24A4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		64C839F72D80638F008E24A4 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		64C839FA2D8063AC008E24A4 /* PointOfStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfStartView.swift; sourceTree = "<group>"; };
+		64C83A032D81A5AB008E24A4 /* Pinnacle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pinnacle.entitlements; sourceTree = "<group>"; };
+		64C83A1E2D81A641008E24A4 /* notificationvc.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notificationvc.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C83A202D81A641008E24A4 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		64C83A222D81A641008E24A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64C83A2D2D81AA7E008E24A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA9BC2C54ADA38CD766A1DA6 /* Pods_Pinnacle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pinnacle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F700181899CFD097A2977B42 /* Pods-Pinnacle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinnacle.debug.xcconfig"; path = "Target Support Files/Pods-Pinnacle/Pods-Pinnacle.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64C839A32D7B3010008E24A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C839E42D7F303F008E24A4 /* RealmSwift in Frameworks */,
+				64C83A162D81A62A008E24A4 /* SdkPushExpress in Frameworks */,
+				64C839FE2D806444008E24A4 /* FirebaseAuth in Frameworks */,
+				64C83A192D81A635008E24A4 /* FlagsmithClient in Frameworks */,
+				64C83A002D806444008E24A4 /* FirebaseFirestore in Frameworks */,
+				F1088FB35876680849D9795A /* Pods_Pinnacle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C83A1B2D81A641008E24A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C83A2A2D81A653008E24A4 /* SdkPushExpress in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35A793D4060DED60D38E4193 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA9BC2C54ADA38CD766A1DA6 /* Pods_Pinnacle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64C8399D2D7B3010008E24A4 = {
+			isa = PBXGroup;
+			children = (
+				64C839A82D7B3010008E24A4 /* Pinnacle */,
+				64C83A1F2D81A641008E24A4 /* notificationvc */,
+				64C839A72D7B3010008E24A4 /* Products */,
+				89CCEF85E6C60193B949B425 /* Pods */,
+				35A793D4060DED60D38E4193 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		64C839A72D7B3010008E24A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64C839A62D7B3010008E24A4 /* Pinnacle.app */,
+				64C83A1E2D81A641008E24A4 /* notificationvc.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64C839A82D7B3010008E24A4 /* Pinnacle */ = {
+			isa = PBXGroup;
+			children = (
+				64C83A032D81A5AB008E24A4 /* Pinnacle.entitlements */,
+				64C83A2D2D81AA7E008E24A4 /* GoogleService-Info.plist */,
+				64C839F92D806398008E24A4 /* PointOfStart */,
+				64C839F42D805C3C008E24A4 /* Onboarding */,
+				64C839ED2D804E45008E24A4 /* News */,
+				64C839EA2D7F8740008E24A4 /* Notifications */,
+				64C839E72D7F3058008E24A4 /* Realm */,
+				64C839DF2D7F2D0E008E24A4 /* CustomAlert */,
+				64C839DC2D7F23DC008E24A4 /* TrainingReservation */,
+				64C839D72D7F1BEF008E24A4 /* DataManager */,
+				64C839D42D7F1BCA008E24A4 /* Model */,
+				64C839D12D7B6C4D008E24A4 /* Profile */,
+				64C839CE2D7B6B31008E24A4 /* SavedReserves */,
+				64C839CB2D7B6943008E24A4 /* SportType */,
+				64C839C62D7B3B75008E24A4 /* Tab */,
+				64C839C32D7B3ACF008E24A4 /* Main */,
+				64C839BE2D7B353A008E24A4 /* AuthAndReg */,
+				64C839BD2D7B3016008E24A4 /* APP */,
+				64C839AF2D7B3010008E24A4 /* Main.storyboard */,
+				64C839B22D7B3011008E24A4 /* Assets.xcassets */,
+				64C839B42D7B3011008E24A4 /* LaunchScreen.storyboard */,
+				64C839B72D7B3011008E24A4 /* Info.plist */,
+			);
+			path = Pinnacle;
+			sourceTree = "<group>";
+		};
+		64C839BD2D7B3016008E24A4 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				64C839A92D7B3010008E24A4 /* AppDelegate.swift */,
+				64C839AB2D7B3010008E24A4 /* SceneDelegate.swift */,
+				64C839AD2D7B3010008E24A4 /* ViewController.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		64C839BE2D7B353A008E24A4 /* AuthAndReg */ = {
+			isa = PBXGroup;
+			children = (
+				64C839BF2D7B3548008E24A4 /* AuthView.swift */,
+				64C839C12D7B354D008E24A4 /* RegView.swift */,
+				64C839F72D80638F008E24A4 /* AuthViewModel.swift */,
+			);
+			path = AuthAndReg;
+			sourceTree = "<group>";
+		};
+		64C839C32D7B3ACF008E24A4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				64C839C42D7B3AD6008E24A4 /* MainView.swift */,
+				64C839C92D7B5C44008E24A4 /* LargeCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		64C839C62D7B3B75008E24A4 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				64C839C72D7B3B8B008E24A4 /* TabMainView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		64C839CB2D7B6943008E24A4 /* SportType */ = {
+			isa = PBXGroup;
+			children = (
+				64C839CC2D7B6952008E24A4 /* SportTypeView.swift */,
+				64C839DA2D7F1E4B008E24A4 /* SmallTrainingCell.swift */,
+			);
+			path = SportType;
+			sourceTree = "<group>";
+		};
+		64C839CE2D7B6B31008E24A4 /* SavedReserves */ = {
+			isa = PBXGroup;
+			children = (
+				64C839CF2D7B6B3B008E24A4 /* SavedReservesView.swift */,
+			);
+			path = SavedReserves;
+			sourceTree = "<group>";
+		};
+		64C839D12D7B6C4D008E24A4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				64C839D22D7B6C53008E24A4 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		64C839D42D7F1BCA008E24A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64C839D52D7F1BE9008E24A4 /* Training.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64C839D72D7F1BEF008E24A4 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				64C839D82D7F1BF8008E24A4 /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		64C839DC2D7F23DC008E24A4 /* TrainingReservation */ = {
+			isa = PBXGroup;
+			children = (
+				64C839DD2D7F23EF008E24A4 /* TrainingReservationView.swift */,
+			);
+			path = TrainingReservation;
+			sourceTree = "<group>";
+		};
+		64C839DF2D7F2D0E008E24A4 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				64C839E02D7F2D18008E24A4 /* CustomAlert.swift */,
+			);
+			path = CustomAlert;
+			sourceTree = "<group>";
+		};
+		64C839E72D7F3058008E24A4 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				64C839E82D7F3061008E24A4 /* RealmManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		64C839EA2D7F8740008E24A4 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				64C839EB2D7F874D008E24A4 /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		64C839ED2D804E45008E24A4 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				64C839EE2D804E4D008E24A4 /* NewsView.swift */,
+				64C839F02D805904008E24A4 /* NewsCell.swift */,
+				64C839F22D80599E008E24A4 /* NewsDetailView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		64C839F42D805C3C008E24A4 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				64C839F52D805C47008E24A4 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		64C839F92D806398008E24A4 /* PointOfStart */ = {
+			isa = PBXGroup;
+			children = (
+				64C839FA2D8063AC008E24A4 /* PointOfStartView.swift */,
+			);
+			path = PointOfStart;
+			sourceTree = "<group>";
+		};
+		64C83A1F2D81A641008E24A4 /* notificationvc */ = {
+			isa = PBXGroup;
+			children = (
+				64C83A202D81A641008E24A4 /* NotificationService.swift */,
+				64C83A222D81A641008E24A4 /* Info.plist */,
+			);
+			path = notificationvc;
+			sourceTree = "<group>";
+		};
+		89CCEF85E6C60193B949B425 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F700181899CFD097A2977B42 /* Pods-Pinnacle.debug.xcconfig */,
+				35BF340DF6FC50BB262717CF /* Pods-Pinnacle.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64C839A52D7B3010008E24A4 /* Pinnacle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C839BA2D7B3011008E24A4 /* Build configuration list for PBXNativeTarget "Pinnacle" */;
+			buildPhases = (
+				321E778B109CADE693385447 /* [CP] Check Pods Manifest.lock */,
+				64C839A22D7B3010008E24A4 /* Sources */,
+				64C839A32D7B3010008E24A4 /* Frameworks */,
+				64C839A42D7B3010008E24A4 /* Resources */,
+				64C839E62D7F3050008E24A4 /* Embed Frameworks */,
+				4FD74445D0529A4FFA933DA9 /* [CP] Embed Pods Frameworks */,
+				64C83A132D81A5C1008E24A4 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C83A242D81A641008E24A4 /* PBXTargetDependency */,
+			);
+			name = Pinnacle;
+			packageProductDependencies = (
+				64C839E32D7F303F008E24A4 /* RealmSwift */,
+				64C839FD2D806444008E24A4 /* FirebaseAuth */,
+				64C839FF2D806444008E24A4 /* FirebaseFirestore */,
+				64C83A152D81A62A008E24A4 /* SdkPushExpress */,
+				64C83A182D81A635008E24A4 /* FlagsmithClient */,
+			);
+			productName = Pinnacle;
+			productReference = 64C839A62D7B3010008E24A4 /* Pinnacle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64C83A1D2D81A641008E24A4 /* notificationvc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C83A262D81A641008E24A4 /* Build configuration list for PBXNativeTarget "notificationvc" */;
+			buildPhases = (
+				64C83A1A2D81A641008E24A4 /* Sources */,
+				64C83A1B2D81A641008E24A4 /* Frameworks */,
+				64C83A1C2D81A641008E24A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = notificationvc;
+			packageProductDependencies = (
+				64C83A292D81A653008E24A4 /* SdkPushExpress */,
+			);
+			productName = notificationvc;
+			productReference = 64C83A1E2D81A641008E24A4 /* notificationvc.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64C8399E2D7B3010008E24A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					64C839A52D7B3010008E24A4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					64C83A1D2D81A641008E24A4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 64C839A12D7B3010008E24A4 /* Build configuration list for PBXProject "Pinnacle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64C8399D2D7B3010008E24A4;
+			packageReferences = (
+				64C839E22D7F303F008E24A4 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				64C839FC2D806444008E24A4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				64C83A142D81A62A008E24A4 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */,
+				64C83A172D81A635008E24A4 /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */,
+			);
+			productRefGroup = 64C839A72D7B3010008E24A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64C839A52D7B3010008E24A4 /* Pinnacle */,
+				64C83A1D2D81A641008E24A4 /* notificationvc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64C839A42D7B3010008E24A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C839B32D7B3011008E24A4 /* Assets.xcassets in Resources */,
+				64C83A2E2D81AA7E008E24A4 /* GoogleService-Info.plist in Resources */,
+				64C839B62D7B3011008E24A4 /* Base in Resources */,
+				64C839B12D7B3010008E24A4 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C83A1C2D81A641008E24A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		321E778B109CADE693385447 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pinnacle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FD74445D0529A4FFA933DA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pinnacle/Pods-Pinnacle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pinnacle/Pods-Pinnacle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pinnacle/Pods-Pinnacle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64C839A22D7B3010008E24A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C839CD2D7B6952008E24A4 /* SportTypeView.swift in Sources */,
+				64C839D62D7F1BE9008E24A4 /* Training.swift in Sources */,
+				64C839D02D7B6B3B008E24A4 /* SavedReservesView.swift in Sources */,
+				64C839AE2D7B3010008E24A4 /* ViewController.swift in Sources */,
+				64C839C52D7B3AD6008E24A4 /* MainView.swift in Sources */,
+				64C839AA2D7B3010008E24A4 /* AppDelegate.swift in Sources */,
+				64C839E92D7F3061008E24A4 /* RealmManager.swift in Sources */,
+				64C839C02D7B3548008E24A4 /* AuthView.swift in Sources */,
+				64C839EF2D804E4D008E24A4 /* NewsView.swift in Sources */,
+				64C839FB2D8063AC008E24A4 /* PointOfStartView.swift in Sources */,
+				64C839AC2D7B3010008E24A4 /* SceneDelegate.swift in Sources */,
+				64C839F32D80599E008E24A4 /* NewsDetailView.swift in Sources */,
+				64C839DE2D7F23EF008E24A4 /* TrainingReservationView.swift in Sources */,
+				64C839CA2D7B5C44008E24A4 /* LargeCell.swift in Sources */,
+				64C839C82D7B3B8B008E24A4 /* TabMainView.swift in Sources */,
+				64C839D32D7B6C53008E24A4 /* ProfileView.swift in Sources */,
+				64C839F12D805904008E24A4 /* NewsCell.swift in Sources */,
+				64C839D92D7F1BF8008E24A4 /* DataManager.swift in Sources */,
+				64C839F82D80638F008E24A4 /* AuthViewModel.swift in Sources */,
+				64C839C22D7B354D008E24A4 /* RegView.swift in Sources */,
+				64C839DB2D7F1E4B008E24A4 /* SmallTrainingCell.swift in Sources */,
+				64C839E12D7F2D18008E24A4 /* CustomAlert.swift in Sources */,
+				64C839EC2D7F874D008E24A4 /* NotificationsView.swift in Sources */,
+				64C839F62D805C47008E24A4 /* OnboardingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C83A1A2D81A641008E24A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C83A212D81A641008E24A4 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64C83A242D81A641008E24A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64C83A1D2D81A641008E24A4 /* notificationvc */;
+			targetProxy = 64C83A232D81A641008E24A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64C839AF2D7B3010008E24A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64C839B02D7B3010008E24A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64C839B42D7B3011008E24A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64C839B52D7B3011008E24A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64C839B82D7B3011008E24A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64C839B92D7B3011008E24A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64C839BB2D7B3011008E24A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F700181899CFD097A2977B42 /* Pods-Pinnacle.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pinnacle/Pinnacle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pinnacle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pinnacle - Sport";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs access to your camera so you can save photos to your profile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinnacleSportApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		64C839BC2D7B3011008E24A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35BF340DF6FC50BB262717CF /* Pods-Pinnacle.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pinnacle/Pinnacle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pinnacle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pinnacle - Sport";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs access to your camera so you can save photos to your profile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinnacleSportApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		64C83A272D81A641008E24A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinnacleSportApp.notificationvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64C83A282D81A641008E24A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinnacleSportApp.notificationvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64C839A12D7B3010008E24A4 /* Build configuration list for PBXProject "Pinnacle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C839B82D7B3011008E24A4 /* Debug */,
+				64C839B92D7B3011008E24A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C839BA2D7B3011008E24A4 /* Build configuration list for PBXNativeTarget "Pinnacle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C839BB2D7B3011008E24A4 /* Debug */,
+				64C839BC2D7B3011008E24A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C83A262D81A641008E24A4 /* Build configuration list for PBXNativeTarget "notificationvc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C83A272D81A641008E24A4 /* Debug */,
+				64C83A282D81A641008E24A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64C839E22D7F303F008E24A4 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		64C839FC2D806444008E24A4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.9.0;
+			};
+		};
+		64C83A142D81A62A008E24A4 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pushexpress/pushexpress-swift-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		64C83A172D81A635008E24A4 /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flagsmith/flagsmith-ios-client.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64C839E32D7F303F008E24A4 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64C839E22D7F303F008E24A4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		64C839FD2D806444008E24A4 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64C839FC2D806444008E24A4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		64C839FF2D806444008E24A4 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64C839FC2D806444008E24A4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		64C83A152D81A62A008E24A4 /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64C83A142D81A62A008E24A4 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+		64C83A182D81A635008E24A4 /* FlagsmithClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64C83A172D81A635008E24A4 /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */;
+			productName = FlagsmithClient;
+		};
+		64C83A292D81A653008E24A4 /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64C83A142D81A62A008E24A4 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 64C8399E2D7B3010008E24A4 /* Project object */;
+}
