@@ -40,20 +40,20 @@
 		64C83A002D806444008E24A4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 64C839FF2D806444008E24A4 /* FirebaseFirestore */; };
 		64C83A162D81A62A008E24A4 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = 64C83A152D81A62A008E24A4 /* SdkPushExpress */; };
 		64C83A192D81A635008E24A4 /* FlagsmithClient in Frameworks */ = {isa = PBXBuildFile; productRef = 64C83A182D81A635008E24A4 /* FlagsmithClient */; };
-		64C83A212D81A641008E24A4 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C83A202D81A641008E24A4 /* NotificationService.swift */; };
-		64C83A252D81A641008E24A4 /* notificationvc.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 64C83A1E2D81A641008E24A4 /* notificationvc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		64C83A2A2D81A653008E24A4 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = 64C83A292D81A653008E24A4 /* SdkPushExpress */; };
 		64C83A2E2D81AA7E008E24A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64C83A2D2D81AA7E008E24A4 /* GoogleService-Info.plist */; };
+		64C83A362D81D785008E24A4 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C83A352D81D785008E24A4 /* NotificationService.swift */; };
+		64C83A3A2D81D785008E24A4 /* notificationsvc.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 64C83A332D81D785008E24A4 /* notificationsvc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		64C83A3F2D81D78D008E24A4 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = 64C83A3E2D81D78D008E24A4 /* SdkPushExpress */; };
 		F1088FB35876680849D9795A /* Pods_Pinnacle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9BC2C54ADA38CD766A1DA6 /* Pods_Pinnacle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		64C83A232D81A641008E24A4 /* PBXContainerItemProxy */ = {
+		64C83A382D81D785008E24A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 64C8399E2D7B3010008E24A4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 64C83A1D2D81A641008E24A4;
-			remoteInfo = notificationvc;
+			remoteGlobalIDString = 64C83A322D81D785008E24A4;
+			remoteInfo = notificationsvc;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,7 +75,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				64C83A252D81A641008E24A4 /* notificationvc.appex in Embed Foundation Extensions */,
+				64C83A3A2D81D785008E24A4 /* notificationsvc.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,10 +114,10 @@
 		64C839F72D80638F008E24A4 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		64C839FA2D8063AC008E24A4 /* PointOfStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfStartView.swift; sourceTree = "<group>"; };
 		64C83A032D81A5AB008E24A4 /* Pinnacle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pinnacle.entitlements; sourceTree = "<group>"; };
-		64C83A1E2D81A641008E24A4 /* notificationvc.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notificationvc.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		64C83A202D81A641008E24A4 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
-		64C83A222D81A641008E24A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64C83A2D2D81AA7E008E24A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64C83A332D81D785008E24A4 /* notificationsvc.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notificationsvc.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C83A352D81D785008E24A4 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		64C83A372D81D785008E24A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA9BC2C54ADA38CD766A1DA6 /* Pods_Pinnacle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pinnacle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F700181899CFD097A2977B42 /* Pods-Pinnacle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinnacle.debug.xcconfig"; path = "Target Support Files/Pods-Pinnacle/Pods-Pinnacle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,11 +136,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64C83A1B2D81A641008E24A4 /* Frameworks */ = {
+		64C83A302D81D785008E24A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C83A2A2D81A653008E24A4 /* SdkPushExpress in Frameworks */,
+				64C83A3F2D81D78D008E24A4 /* SdkPushExpress in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				64C839A82D7B3010008E24A4 /* Pinnacle */,
-				64C83A1F2D81A641008E24A4 /* notificationvc */,
+				64C83A342D81D785008E24A4 /* notificationsvc */,
 				64C839A72D7B3010008E24A4 /* Products */,
 				89CCEF85E6C60193B949B425 /* Pods */,
 				35A793D4060DED60D38E4193 /* Frameworks */,
@@ -170,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				64C839A62D7B3010008E24A4 /* Pinnacle.app */,
-				64C83A1E2D81A641008E24A4 /* notificationvc.appex */,
+				64C83A332D81D785008E24A4 /* notificationsvc.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -340,13 +340,13 @@
 			path = PointOfStart;
 			sourceTree = "<group>";
 		};
-		64C83A1F2D81A641008E24A4 /* notificationvc */ = {
+		64C83A342D81D785008E24A4 /* notificationsvc */ = {
 			isa = PBXGroup;
 			children = (
-				64C83A202D81A641008E24A4 /* NotificationService.swift */,
-				64C83A222D81A641008E24A4 /* Info.plist */,
+				64C83A352D81D785008E24A4 /* NotificationService.swift */,
+				64C83A372D81D785008E24A4 /* Info.plist */,
 			);
-			path = notificationvc;
+			path = notificationsvc;
 			sourceTree = "<group>";
 		};
 		89CCEF85E6C60193B949B425 /* Pods */ = {
@@ -376,7 +376,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				64C83A242D81A641008E24A4 /* PBXTargetDependency */,
+				64C83A392D81D785008E24A4 /* PBXTargetDependency */,
 			);
 			name = Pinnacle;
 			packageProductDependencies = (
@@ -390,24 +390,24 @@
 			productReference = 64C839A62D7B3010008E24A4 /* Pinnacle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		64C83A1D2D81A641008E24A4 /* notificationvc */ = {
+		64C83A322D81D785008E24A4 /* notificationsvc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64C83A262D81A641008E24A4 /* Build configuration list for PBXNativeTarget "notificationvc" */;
+			buildConfigurationList = 64C83A3B2D81D785008E24A4 /* Build configuration list for PBXNativeTarget "notificationsvc" */;
 			buildPhases = (
-				64C83A1A2D81A641008E24A4 /* Sources */,
-				64C83A1B2D81A641008E24A4 /* Frameworks */,
-				64C83A1C2D81A641008E24A4 /* Resources */,
+				64C83A2F2D81D785008E24A4 /* Sources */,
+				64C83A302D81D785008E24A4 /* Frameworks */,
+				64C83A312D81D785008E24A4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = notificationvc;
+			name = notificationsvc;
 			packageProductDependencies = (
-				64C83A292D81A653008E24A4 /* SdkPushExpress */,
+				64C83A3E2D81D78D008E24A4 /* SdkPushExpress */,
 			);
-			productName = notificationvc;
-			productReference = 64C83A1E2D81A641008E24A4 /* notificationvc.appex */;
+			productName = notificationsvc;
+			productReference = 64C83A332D81D785008E24A4 /* notificationsvc.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -423,7 +423,7 @@
 					64C839A52D7B3010008E24A4 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					64C83A1D2D81A641008E24A4 = {
+					64C83A322D81D785008E24A4 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -448,7 +448,7 @@
 			projectRoot = "";
 			targets = (
 				64C839A52D7B3010008E24A4 /* Pinnacle */,
-				64C83A1D2D81A641008E24A4 /* notificationvc */,
+				64C83A322D81D785008E24A4 /* notificationsvc */,
 			);
 		};
 /* End PBXProject section */
@@ -465,7 +465,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64C83A1C2D81A641008E24A4 /* Resources */ = {
+		64C83A312D81D785008E24A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -548,21 +548,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64C83A1A2D81A641008E24A4 /* Sources */ = {
+		64C83A2F2D81D785008E24A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C83A212D81A641008E24A4 /* NotificationService.swift in Sources */,
+				64C83A362D81D785008E24A4 /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		64C83A242D81A641008E24A4 /* PBXTargetDependency */ = {
+		64C83A392D81D785008E24A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 64C83A1D2D81A641008E24A4 /* notificationvc */;
-			targetProxy = 64C83A232D81A641008E24A4 /* PBXContainerItemProxy */;
+			target = 64C83A322D81D785008E24A4 /* notificationsvc */;
+			targetProxy = 64C83A382D81D785008E24A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -783,14 +783,14 @@
 			};
 			name = Release;
 		};
-		64C83A272D81A641008E24A4 /* Debug */ = {
+		64C83A3C2D81D785008E24A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = notificationvc/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = notificationvc;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -798,7 +798,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.PinnacleSportApp.notificationvc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinnacleSportApp.notificationsvc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -807,14 +807,14 @@
 			};
 			name = Debug;
 		};
-		64C83A282D81A641008E24A4 /* Release */ = {
+		64C83A3D2D81D785008E24A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = notificationvc/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = notificationvc;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -822,7 +822,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.PinnacleSportApp.notificationvc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PinnacleSportApp.notificationsvc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -852,11 +852,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64C83A262D81A641008E24A4 /* Build configuration list for PBXNativeTarget "notificationvc" */ = {
+		64C83A3B2D81D785008E24A4 /* Build configuration list for PBXNativeTarget "notificationsvc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64C83A272D81A641008E24A4 /* Debug */,
-				64C83A282D81A641008E24A4 /* Release */,
+				64C83A3C2D81D785008E24A4 /* Debug */,
+				64C83A3D2D81D785008E24A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -924,7 +924,7 @@
 			package = 64C83A172D81A635008E24A4 /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */;
 			productName = FlagsmithClient;
 		};
-		64C83A292D81A653008E24A4 /* SdkPushExpress */ = {
+		64C83A3E2D81D78D008E24A4 /* SdkPushExpress */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 64C83A142D81A62A008E24A4 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
 			productName = SdkPushExpress;
