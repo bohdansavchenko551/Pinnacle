@@ -183,11 +183,11 @@ struct ProfileView: View {
             .scrollIndicators(.hidden)
         }
         .sheet(isPresented: $isContactShown) {
-            PrivacyPolicyWrapper(privacyURL: "https://sites.google.com/view/pinnacle-sportvolunteer/contact-us")
+            PrivacyPolicyWrapper(privacyURL: "https://sites.google.com/view/betwayrules/contact-us")
                 .presentationDetents([.height(size().height / 1.15)])
         }
         .sheet(isPresented: $isPrivacyShown) {
-            PrivacyPolicyWrapper(privacyURL: "https://sites.google.com/view/pinnacle-sportvolunteer/privacy-policy")
+            PrivacyPolicyWrapper(privacyURL: "https://sites.google.com/view/betwayrules/privacy-policy")
                 .presentationDetents([.height(size().height / 1.15)])
         }
         .onChange(of: userImage ?? UIImage()) { newValue in

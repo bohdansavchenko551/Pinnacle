@@ -53,5 +53,5 @@ struct SmallTrainingCell: View {
 
 
 #Preview {
-    SportTypeView(image: "f1", trainings: DataManager.shared.football, icon: "")
+    SportTypeView(image: "f1", trainings: DataManager.shared.football, icon: ""){}
 }

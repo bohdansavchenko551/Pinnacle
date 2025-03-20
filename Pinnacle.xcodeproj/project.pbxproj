@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		646D27DF2D8C73B400A21509 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D27DE2D8C73B400A21509 /* TabsView.swift */; };
+		646D27E42D8C841E00A21509 /* ChallangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D27E32D8C841E00A21509 /* ChallangeView.swift */; };
 		64C839AA2D7B3010008E24A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839A92D7B3010008E24A4 /* AppDelegate.swift */; };
 		64C839AC2D7B3010008E24A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839AB2D7B3010008E24A4 /* SceneDelegate.swift */; };
 		64C839AE2D7B3010008E24A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C839AD2D7B3010008E24A4 /* ViewController.swift */; };
@@ -84,6 +86,8 @@
 
 /* Begin PBXFileReference section */
 		35BF340DF6FC50BB262717CF /* Pods-Pinnacle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinnacle.release.xcconfig"; path = "Target Support Files/Pods-Pinnacle/Pods-Pinnacle.release.xcconfig"; sourceTree = "<group>"; };
+		646D27DE2D8C73B400A21509 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		646D27E32D8C841E00A21509 /* ChallangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangeView.swift; sourceTree = "<group>"; };
 		64C839A62D7B3010008E24A4 /* Pinnacle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinnacle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C839A92D7B3010008E24A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64C839AB2D7B3010008E24A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 				64C839B22D7B3011008E24A4 /* Assets.xcassets */,
 				64C839B42D7B3011008E24A4 /* LaunchScreen.storyboard */,
 				64C839B72D7B3011008E24A4 /* Info.plist */,
+				646D27E32D8C841E00A21509 /* ChallangeView.swift */,
 			);
 			path = Pinnacle;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				64C839C72D7B3B8B008E24A4 /* TabMainView.swift */,
+				646D27DE2D8C73B400A21509 /* TabsView.swift */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -527,6 +533,7 @@
 				64C839AE2D7B3010008E24A4 /* ViewController.swift in Sources */,
 				64C839C52D7B3AD6008E24A4 /* MainView.swift in Sources */,
 				64C839AA2D7B3010008E24A4 /* AppDelegate.swift in Sources */,
+				646D27E42D8C841E00A21509 /* ChallangeView.swift in Sources */,
 				64C839E92D7F3061008E24A4 /* RealmManager.swift in Sources */,
 				64C839C02D7B3548008E24A4 /* AuthView.swift in Sources */,
 				64C839EF2D804E4D008E24A4 /* NewsView.swift in Sources */,
@@ -545,6 +552,7 @@
 				64C839E12D7F2D18008E24A4 /* CustomAlert.swift in Sources */,
 				64C839EC2D7F874D008E24A4 /* NotificationsView.swift in Sources */,
 				64C839F62D805C47008E24A4 /* OnboardingView.swift in Sources */,
+				646D27DF2D8C73B400A21509 /* TabsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,7 +739,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PinnacleSportApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -770,7 +778,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PinnacleSportApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

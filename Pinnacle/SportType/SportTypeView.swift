@@ -14,6 +14,7 @@ struct SportTypeView: View {
     var image: String
     var trainings: [Training]
     var icon: String
+    var completion: () -> ()
     @State private var trainingToShow: Training?
     
     var body: some View {
@@ -35,6 +36,7 @@ struct SportTypeView: View {
                             HStack {
                                 Button {
                                     dismiss()
+                                    completion()
                                 } label: {
                                     Image(systemName: "xmark")
                                         .foregroundStyle(.white)
@@ -68,5 +70,5 @@ struct SportTypeView: View {
 }
 
 #Preview {
-    SportTypeView(image: "f1", trainings: DataManager.shared.football, icon: "football")
+    SportTypeView(image: "f1", trainings: DataManager.shared.football, icon: "football"){}
 }

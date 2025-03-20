@@ -140,6 +140,7 @@ These sessions are open to all members and cater to different fitness levels. No
                 }
                 .scrollIndicators(.hidden)
             }
+            .padding(.bottom, 50)
         }
         .fullScreenCover(item: $itemtoShow) { item in
             NewsDetailView(news: item)
