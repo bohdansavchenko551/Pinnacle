@@ -16,33 +16,25 @@ struct LargeCell: View {
         Image(image)
             .resizable()
             .scaledToFill()
-            .frame(width: size().width - 40, height: 150)
+            .frame(width: size().width / 2.5, height: 150)
             .cornerRadius(12)
-            .shadow(color: .softBlue, radius: 1)
-            .shadow(color: .softBlue, radius: 1)
-            .shadow(color: .softBlue, radius: 1)
-            .shadow(color: .softBlue, radius: 1)
-            .shadow(color: .softBlue, radius: 1)
+            
             .shadow(color: .softBlue, radius: 1)
             .overlay {
-                VStack {
-                    Spacer()
-                    
-                    HStack {
-                        
-                        Text(title)
-                            .foregroundStyle(.white)
-                            .font(.system(size: 24, weight: .thin))
-                        Spacer()
-                    }
-                }
-                .padding(10)
+                Text(title)
+                    .foregroundStyle(.white)
+                    .font(.system(size: 24, weight: .semibold))
+                    .shadow(radius: 3)
             }
         
     }
 }
 
 #Preview {
-    LargeCell(image: "f2", title: "Football")
-        .preferredColorScheme(.dark)
+    MainView(){}
 }
+
+//#Preview {
+//    LargeCell(image: "f2", title: "Football")
+//        .preferredColorScheme(.dark)
+//}

@@ -25,6 +25,22 @@ struct ProfileView: View {
                 .ignoresSafeArea()
             
             ScrollView {
+                
+                HStack {
+                    Image("logo")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 50 , height: 50)
+                    
+                    Text("Profile")
+                        .foregroundStyle(.white)
+                        .font(.system(size: 32, weight: .black))
+                    
+                    Spacer()
+                   
+                }
+                .padding(.leading)
+                
                 VStack(spacing: 25) {
                     if let image = userImage {
                         Image(uiImage: image)
@@ -47,9 +63,14 @@ struct ProfileView: View {
                                 }
                             }
                     } else {
-                        Image("logo")
-                            .resizable()
-                            .scaledToFill()
+                        Image(systemName: "person")
+                            .font(.system(size: 68))
+                            .background {
+                                Circle()
+                                    .stroke(lineWidth: 4)
+                                    .foregroundStyle(.cutsomOrange)
+                                    .frame(width: 200 , height: 160)
+                            }
                             .frame(width: 200 , height: 160)
                             .overlay {
                                 VStack {
@@ -66,15 +87,6 @@ struct ProfileView: View {
                                 }
                             }
                     }
-                    
-                    
-                    Text(authViewModel.currentuser?.name ?? "")
-                        .foregroundStyle(.white)
-                        .frame(width: size().width - 40, alignment: .leading)
-                    
-                    Text(authViewModel.userSession?.email ?? "Anonymous")
-                        .foregroundStyle(.white)
-                        .frame(width: size().width - 40, alignment: .leading)                    
                     
                     Button {
                         isContactShown.toggle()
@@ -99,7 +111,7 @@ struct ProfileView: View {
                                 .padding(.horizontal)
                             }
                     }
-                    
+                    .padding(.top)
                     
                     
                     Button {

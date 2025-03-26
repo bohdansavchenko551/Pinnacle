@@ -16,4 +16,5 @@ struct Training: Codable, Identifiable {
     let coachName: String
     let description: String
     let itemsToBring: String
+    var icon: String?
 }

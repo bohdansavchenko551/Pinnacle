@@ -19,25 +19,28 @@ struct ChallangeView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Text("Your Daily \nChallange")
-                    .foregroundStyle(.white)
-                    .font(.system(size: 32, weight: .thin))
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 20)
-                    .overlay {
-                        HStack {
-                            Spacer()
-                            
-                            Button {
-                                isNotifShown.toggle()
-                            } label: {
-                                Image(systemName: "bell")
-                            }
-                            .foregroundStyle(.white)
-                        }
-                        .frame(width: size().width - 40)
-                        .padding(.bottom)
+                HStack {
+                    Image("logo")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 50 , height: 50)
+                    
+                    Text("Challange")
+                        .foregroundStyle(.white)
+                        .font(.system(size: 32, weight: .black))
+                    
+                    Spacer()
+                    
+                    Button {
+                        isNotifShown.toggle()
+                    } label: {
+                        Image(systemName: "bell")
                     }
+                    .foregroundStyle(.white)
+                    .padding(.trailing, 20)
+                }
+                .padding(.leading)
+         
                 
                 HStack(spacing: 0) {
                     ForEach(0..<5) { index in
@@ -96,13 +99,14 @@ You completed today's challenge and became stronger! Keep it up!
                             .foregroundStyle(.cutsomOrange)
                             .font(.system(size: 32))
                             .multilineTextAlignment(.center)
+                            .padding(.horizontal)
                         
                         Spacer()
                     }
                 }
                 .padding(.top)
                     .foregroundStyle(.white)
-                    .frame(width: size().width - 40, height: 150)
+                    .frame(width: size().width - 40, height: 190)
                     .padding(.vertical)
                     .background {
                         RoundedRectangle(cornerRadius: 18)
@@ -127,7 +131,7 @@ You completed today's challenge and became stronger! Keep it up!
                         .frame(width: size().width - 80, height: 65)
                         .foregroundStyle(.cutsomOrange)
                         .overlay {
-                            Text("Challenge completed!")
+                            Text(isCompleted ? "Challenge completed!" : "Complete Challange")
                                 .foregroundStyle(.white)
                                 .font(.system(size: 22, weight: .black))
                         }

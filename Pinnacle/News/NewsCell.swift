@@ -12,6 +12,8 @@ struct NewsCell: View {
     var news: NewsElement
     var completion: () -> ()
     
+   
+    
     var body: some View {
         Button {
             completion()
@@ -31,11 +33,10 @@ struct NewsCell: View {
                         ]), startPoint: .top, endPoint: .bottom))
                 .overlay {
                     VStack {
-                        Spacer()
                         
                         Text(news.newsTitle)
                             .foregroundStyle(.white)
-                            .font(.system(size: 24, weight: .thin))
+                            .font(.system(size: 24, weight: .semibold))
                             .padding(30)
                             .multilineTextAlignment(.center)
                     }

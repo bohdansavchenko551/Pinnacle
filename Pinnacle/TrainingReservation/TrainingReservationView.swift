@@ -60,7 +60,7 @@ struct TrainingReservationView: View {
                 
                 ScrollView {
                     
-                    Text("INFO:")
+                    Text("DRILL INFO:")
                         .font(.system(size: 32, weight: .thin))
                         .foregroundStyle(.white)
                     
@@ -145,6 +145,7 @@ struct TrainingReservationView: View {
                         openInAppleMaps(address: trainig.location)
                     } label: {
                         Text(trainig.location)
+                            .padding(.horizontal)
                             .foregroundStyle(.cutsomOrange)
                             .frame(width: size().width - 40)
                             .padding(.vertical)
@@ -156,6 +157,7 @@ struct TrainingReservationView: View {
                                     .cornerRadius(18)
                                 
                             }
+                            
                     }
                   
                     

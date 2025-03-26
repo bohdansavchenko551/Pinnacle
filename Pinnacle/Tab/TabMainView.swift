@@ -9,6 +9,7 @@ import SwiftUI
 
 #Preview {
     TabMainView()
+        .environmentObject(AuthViewModel())
 }
 
 struct TabMainView: View {
@@ -87,6 +88,7 @@ struct TabBarView: View {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .fill(Color.darkBlue)
                 .shadow(color: .softBlue.opacity(0.4), radius: 20, x: 0, y: 20)
+                .shadow(color: .softBlue, radius: 10, y: 10)
             
             TabsLayoutView(selectedTab: $tab)
                 .toolbar(.hidden, for: .tabBar)
@@ -138,24 +140,24 @@ fileprivate struct TabsLayoutView: View {
                             .shadow(radius: 10)
                             .background {
                                 Circle()
-                                    .stroke(lineWidth: 15)
+                                    .stroke(lineWidth: 5)
                                     .foregroundColor(.cutsomOrange.opacity(0.7))
                                 
                             }
-                            .offset(y: -25)
+                            .offset(y: -15)
                             .matchedGeometryEffect(id: "Selected Tab", in: namespace)
                             .animation(.spring(), value: selectedTab)
                     }
                     
                     Image(tab.icon)
                         .resizable()
-                        .frame(width: 40, height: 40)
+                        .frame(width: 30, height: 30)
                         .colorInvert()
                         .colorMultiply(.white)
                         .font(.system(size: 23, weight: .semibold, design: .rounded))
                         .foregroundColor(isSelected ? .init(white: 0.9) : .gray)
                         .scaleEffect(isSelected ? 1 : 0.8)
-                        .offset(y: isSelected ? -25 : 0)
+                        .offset(y: isSelected ? -15 : 0)
                         .animation(isSelected ? .spring(response: 0.5, dampingFraction: 0.3, blendDuration: 1) : .spring(), value: selectedTab)
                 }
             }

@@ -27,9 +27,11 @@ struct SportTypeView: View {
                 Image(image)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: size().width, height: 250)
+                    .frame(width: size().width, height: 150)
+                    .offset(y: -90)
                     .clipShape(.rect(topLeadingRadius: 0, bottomLeadingRadius: 12, bottomTrailingRadius: 12, topTrailingRadius: 0))
                     .ignoresSafeArea()
+                    .blur(radius: 4)
                     .shadow(color: .softBlue, radius: 10, y: 10)
                     .overlay {
                         VStack {
@@ -48,6 +50,12 @@ struct SportTypeView: View {
                             }
                             Spacer()
                         }
+                    }
+                    .overlay {
+                        Text(icon.capitalized)
+                            .foregroundStyle(.white)
+                            .font(.system(size: 42, weight: .black))
+                            .padding(.bottom, 40)
                     }
                     
                 

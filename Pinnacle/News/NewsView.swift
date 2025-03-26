@@ -23,7 +23,94 @@ class NewsElement: Identifiable {
 struct NewsView: View {
     
     @State private var currentNewsIndex: Int = 0
+    @State private var currentTipIndex: Int = 0
+
     @State private var itemtoShow: NewsElement?
+    
+    @State var currentIndex: Int = 0
+    @State var tipIndex: Int = 0
+    
+    
+    
+    var body: some View {
+        ZStack {
+            Rectangle()
+                .foregroundStyle(.darkBlue)
+                .ignoresSafeArea()
+            ScrollView {
+                VStack {
+                    HStack {
+                        Image("logo")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 50 , height: 50)
+                        
+                        Text("News")
+                            .foregroundStyle(.white)
+                            .font(.system(size: 32, weight: .black))
+                        
+                        Spacer()
+                    }
+                    .padding(.leading)
+                    
+                    GeometryReader { geometry in
+                        TabView(selection: $currentNewsIndex) {
+                            ForEach(0..<news.count, id: \.self) { index in
+                                NewsCell(news: news[index]) {
+                                    itemtoShow = news[index]
+                                }
+                            }
+                        }
+                    }
+                    .tabViewStyle(.page(indexDisplayMode: .always))
+                    .frame(width: size().width, height: 230)
+                    .padding(.top, -20)
+                    
+                    HStack {
+                        
+                        Text("Tips")
+                            .foregroundStyle(.white)
+                            .font(.system(size: 32, weight: .black))
+                            .padding(.leading, 10)
+                        
+                        Spacer()
+                    }
+                    .padding(.leading)
+                    
+                    GeometryReader { geometry in
+                        TabView(selection: $currentTipIndex) {
+                            ForEach(0..<sportsTips.count, id: \.self) { index in
+                                TipCell(news: sportsTips[index]) {
+                                    itemtoShow = sportsTips[index]
+                                }
+                            }
+                        }
+                    }
+                    .tabViewStyle(.page(indexDisplayMode: .always))
+                    .frame(width: size().width, height: 320)
+                    .padding(.bottom, 50)
+                    
+                    
+//                    VStack {
+//                        ForEach(sportsTips, id: \.newsImage) { news in
+//                            NewsCell(news: news) {
+//                                itemtoShow = news
+//                            }
+//                        }
+//                        
+//                    }
+                }
+                .scrollIndicators(.hidden)
+            }
+            .scrollIndicators(.hidden)
+            .padding(.bottom, 50)
+        }
+        .fullScreenCover(item: $itemtoShow) { item in
+            NewsDetailView(news: item)
+        }
+    }
+    
+    
     
     var news: [NewsElement] = [
     NewsElement(newsTitle: "Join Our Team: We’re Looking for New Coaches!", newsDescription: """
@@ -96,56 +183,6 @@ These sessions are open to all members and cater to different fitness levels. No
             newsImage: "tip10"
         )
     ]
-    
-    var body: some View {
-        ZStack {
-            Rectangle()
-                .foregroundStyle(.darkBlue)
-                .ignoresSafeArea()
-            ScrollView {
-                VStack {
-                    Text("News")
-                        .foregroundStyle(.white)
-                        .font(.system(size: 32, weight: .thin))
-                        .multilineTextAlignment(.center)
-                        .padding(.top, 20)
-                    
-                    GeometryReader { geometry in
-                        TabView(selection: $currentNewsIndex) {
-                            ForEach(0..<news.count, id: \.self) { index in
-                                NewsCell(news: news[index]) {
-                                    itemtoShow = news[index]
-                                }
-                            }
-                        }
-                    }
-                    .tabViewStyle(.page(indexDisplayMode: .always))
-                    .frame(width: size().width, height: 230)
-                    .padding(.top, -20)
-                    
-                    Text("Tips")
-                        .foregroundStyle(.white)
-                        .font(.system(size: 32, weight: .thin))
-                        .multilineTextAlignment(.center)
-                        .padding(.top, -20)
-                    
-                    VStack {
-                        ForEach(sportsTips, id: \.newsImage) { news in
-                            NewsCell(news: news) {
-                                itemtoShow = news
-                            }
-                        }
-                        
-                    }
-                }
-                .scrollIndicators(.hidden)
-            }
-            .padding(.bottom, 50)
-        }
-        .fullScreenCover(item: $itemtoShow) { item in
-            NewsDetailView(news: item)
-        }
-    }
 }
 
 #Preview {

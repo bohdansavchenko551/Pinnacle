@@ -19,25 +19,27 @@ struct SavedReservesView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Text("Your Training \nRegistrations")
-                    .foregroundStyle(.white)
-                    .font(.system(size: 32, weight: .thin))
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 20)
-                    .overlay {
-                        HStack {
-                            Spacer()
-                            
-                            Button {
-                                isNotifShown.toggle()
-                            } label: {
-                                Image(systemName: "bell")
-                            }
-                            .foregroundStyle(.white)
-                        }
-                        .frame(width: size().width - 40)
-                        .padding(.bottom)
+                HStack {
+                    Image("logo")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 50 , height: 50)
+                    
+                    Text("Reservations")
+                        .foregroundStyle(.white)
+                        .font(.system(size: 32, weight: .black))
+                    
+                    Spacer()
+                    
+                    Button {
+                        isNotifShown.toggle()
+                    } label: {
+                        Image(systemName: "bell")
                     }
+                    .foregroundStyle(.white)
+                    .padding(.trailing, 20)
+                }
+                .padding(.leading)
                 
                 if !reservations.isEmpty {
                     ScrollView {
