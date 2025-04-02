@@ -14,7 +14,7 @@ struct PointOfStartView: View {
     var body: some View {
         Group {
             if viewModel.userSession != nil {
-                TabMainView()
+                NewTabView()
                     .environmentObject(viewModel)
             } else {
                 AuthView(viewModel: viewModel)

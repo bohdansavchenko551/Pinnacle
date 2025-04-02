@@ -16,7 +16,7 @@ struct ProfileView: View {
     
     @State private var isContactShown = false
     @State private var isPrivacyShown = false
-
+    
     
     var body: some View {
         ZStack {
@@ -27,17 +27,14 @@ struct ProfileView: View {
             ScrollView {
                 
                 HStack {
-                    Image("logo")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 50 , height: 50)
+                    Spacer()
                     
                     Text("Profile")
                         .foregroundStyle(.white)
                         .font(.system(size: 32, weight: .black))
                     
                     Spacer()
-                   
+                    
                 }
                 .padding(.leading)
                 
@@ -47,7 +44,7 @@ struct ProfileView: View {
                             .resizable()
                             .scaledToFill()
                             .clipShape(Circle())
-                            .frame(width: 200 , height: 160)
+                            .frame(width: 150 , height: 150)
                             .overlay {
                                 VStack {
                                     Spacer()
@@ -69,9 +66,9 @@ struct ProfileView: View {
                                 Circle()
                                     .stroke(lineWidth: 4)
                                     .foregroundStyle(.cutsomOrange)
-                                    .frame(width: 200 , height: 160)
+                                    .frame(width: 150 , height: 150)
                             }
-                            .frame(width: 200 , height: 160)
+                            .frame(width: 150 , height: 150)
                             .overlay {
                                 VStack {
                                     Spacer()
@@ -88,123 +85,191 @@ struct ProfileView: View {
                             }
                     }
                     
-                    Button {
-                        isContactShown.toggle()
-                    } label: {
-                        RoundedRectangle(cornerRadius: 18)
-                            .frame(width: size().width - 100, height: 70)
-                            .foregroundStyle(.cutsomOrange)
-                            .overlay {
-                                HStack {
-                                    Image("contactIcon")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 40, height: 40)
+                    RoundedRectangle(cornerRadius: 18)
+                        .foregroundStyle(.cutsomOrange)
+                        .frame(width: size().width - 40, height: 100)
+                        .overlay {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 18)
+                                    .stroke(lineWidth: 2)
+                                    .foregroundStyle(.white)
+                                
+                                VStack {
+                                    Spacer()
                                     
-                                    Text("Contact Us")
-                                        .font(.system(size: 24, weight: .bold))
+                                    Text("User:")
                                         .foregroundStyle(.white)
-                                        .padding(.leading, 30)
+                                        .font(.system(size: 18, design: .monospaced))
+                                        .frame(width: size().width - 60, alignment: .leading)
+                                    
+                                    Spacer()
+                                    
+                                    
+                                    Text(authViewModel.userSession?.email ?? "Anonymous")
+                                        .foregroundStyle(.white)
+                                        .font(.system(size: 24, weight: .black))
+                                        .frame(width: size().width - 60, alignment: .leading)
                                     
                                     Spacer()
                                 }
-                                .padding(.horizontal)
                             }
-                    }
-                    .padding(.top)
+                        }
                     
-                    
-                    Button {
-                        isPrivacyShown.toggle()
-                    } label: {
-                        RoundedRectangle(cornerRadius: 18)
-                            .frame(width: size().width - 100, height: 70)
-                            .foregroundStyle(.cutsomOrange)
-                            .overlay {
-                                HStack {
-                                    Image("privacyIcon")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 40, height: 40)
+                    RoundedRectangle(cornerRadius: 18)
+                        .foregroundStyle(.cutsomOrange)
+                        .frame(width: size().width - 40, height: 150)
+                        .overlay {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 18)
+                                    .stroke(lineWidth: 2)
+                                    .foregroundStyle(.white)
+                                
+                                VStack {
+                                    Spacer()
                                     
-                                    Text("Privacy Policy")
-                                        .font(.system(size: 24, weight: .bold))
+                                    Text("Support:")
                                         .foregroundStyle(.white)
-                                        .padding(.leading, 30)
+                                        .font(.system(size: 18, design: .monospaced))
+                                        .frame(width: size().width - 60, alignment: .leading)
+                                    
+                                    
+                                    Spacer()
+                                    
+                                    Button {
+                                        isContactShown.toggle()
+                                    } label: {
+                                        HStack {
+                                            Image("contactIcon")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 20, height: 20)
+                                            
+                                            Text("Contact Us")
+                                                .font(.system(size: 17, weight: .bold))
+                                                .foregroundStyle(.white)
+                                                .padding(.leading, 30)
+                                            
+                                            Spacer()
+                                            
+                                            Image(systemName: "chevron.right")
+                                                .foregroundStyle(.white)
+                                        }
+                                        .padding(.horizontal)
+                                    }
+                                    
+                                    Spacer()
+                                    
+                                    Button {
+                                        isPrivacyShown.toggle()
+                                    } label: {
+                                        HStack {
+                                            Image("privacyIcon")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 20, height: 20)
+                                            
+                                            Text("Privacy Policy")
+                                                .font(.system(size: 17, weight: .bold))
+                                                .foregroundStyle(.white)
+                                                .padding(.leading, 30)
+                                            
+                                            Spacer()
+                                            
+                                            Image(systemName: "chevron.right")
+                                                .foregroundStyle(.white)
+                                        }
+                                        .padding(.horizontal)
+                                    }
+                                    
                                     
                                     Spacer()
                                 }
-                                .padding(.horizontal)
                             }
+                        }
+                    
+                    if authViewModel.currentuser?.name != "" {
+                        Button {
+                            isWannaDelete.toggle()
+                        } label: {
+                            RoundedRectangle(cornerRadius: 28)
+                                .frame(width: size().width - 100, height: 70)
+                                .foregroundStyle(.cutsomOrange)
+                                .shadow(color: .cutsomOrange, radius: 2, y: 7)
+                                .overlay {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 28)
+                                            .stroke(lineWidth: 2)
+                                            .foregroundStyle(.white)
+                                        
+                                        HStack {
+                                            Image("deleteIcon")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 30, height: 30)
+                                            
+                                            Text("Delete Account")
+                                                .font(.system(size: 18, weight: .bold))
+                                                .foregroundStyle(.white)
+                                                .padding(.leading, 30)
+                                            
+                                            Spacer()
+                                        }
+                                        .padding(.horizontal)
+                                    }
+                                }
+                        }
                     }
                     
                     
                     Button {
                         authViewModel.signOut()
                     } label: {
-                        RoundedRectangle(cornerRadius: 18)
-                            .frame(width: size().width - 100, height: 70)
+                        RoundedRectangle(cornerRadius: 28)
+                            .frame(width: size().width - 190, height: 70)
                             .foregroundStyle(.cutsomOrange)
+                            .shadow(color: .cutsomOrange, radius: 2, y: 7)
                             .overlay {
-                                HStack {
-                                    Image("exitIcon")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 40, height: 40)
-                                    
-                                    Text("Log Out")
-                                        .font(.system(size: 24, weight: .bold))
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 28)
+                                        .stroke(lineWidth: 2)
                                         .foregroundStyle(.white)
-                                        .padding(.leading, 30)
-                                    
-                                    Spacer()
-                                }
-                                .padding(.horizontal)
-                            }
-                    }
-                    
-                    
-                    if authViewModel.currentuser?.name != "" {
-                        Button {
-                            isWannaDelete.toggle()
-                        } label: {
-                            RoundedRectangle(cornerRadius: 18)
-                                .frame(width: size().width - 100, height: 70)
-                                .foregroundStyle(.cutsomOrange)
-                                .overlay {
                                     HStack {
-                                        Image("deleteIcon")
+                                        Image("exitIcon")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 40, height: 40)
+                                            .frame(width: 30, height: 30)
                                         
-                                        Text("Delete Account")
-                                            .font(.system(size: 24, weight: .bold))
+                                        Text("Log Out")
+                                            .font(.system(size: 18, weight: .bold))
                                             .foregroundStyle(.white)
-                                            .padding(.leading, 30)
+                                            .padding(.leading, 15)
                                         
                                         Spacer()
                                     }
                                     .padding(.horizontal)
                                 }
-                        }
-                        .padding(.bottom, 150)
+                               
+                            }
                     }
+                    .padding(.bottom, 150)
+                    
+                    
+                    
                 }
             }
             .scrollIndicators(.hidden)
         }
         .sheet(isPresented: $isContactShown) {
-            PrivacyPolicyWrapper(privacyURL: "https://sites.google.com/view/betwayrules/contact-us")
+            PrivacyPolicyWrapper(privacyURL: "https://sites.google.com/view/pinnacle-sportvolunteer/contact-us")
                 .presentationDetents([.height(size().height / 1.15)])
         }
         .sheet(isPresented: $isPrivacyShown) {
-            PrivacyPolicyWrapper(privacyURL: "https://sites.google.com/view/betwayrules/privacy-policy")
+            PrivacyPolicyWrapper(privacyURL: "https://sites.google.com/view/pinnacle-sportvolunteer/privacy-policy")
                 .presentationDetents([.height(size().height / 1.15)])
         }
         .onChange(of: userImage ?? UIImage()) { newValue in
             RealmManager.shared.saveImage(image: newValue)
-
+            
         }
         .sheet(isPresented: $isShown, content: {
             ImagePicker(sourceType: .camera, selectedImage: $userImage)
@@ -232,7 +297,7 @@ struct ProfileView: View {
             }
             
             Button {
-                 
+                
             } label: {
                 Text("No")
             }
@@ -243,9 +308,10 @@ struct ProfileView: View {
     
 }
 
-//#Preview {
-//    ProfileView()
-//}
+#Preview {
+    ProfileView()
+        .environmentObject(AuthViewModel())
+}
 
 
 struct ImagePicker: UIViewControllerRepresentable {

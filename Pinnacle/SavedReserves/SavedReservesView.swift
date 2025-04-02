@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SavedReservesView: View {
-    
+    @Environment(\.dismiss) var dismiss
     @State private var reservations: [RealmReservation] = []
     @State private var isNotifShown = false
     
@@ -20,10 +20,24 @@ struct SavedReservesView: View {
             
             VStack {
                 HStack {
-                    Image("logo")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 50 , height: 50)
+                    Button {
+                        dismiss()
+                    } label: {
+                        ZStack {
+                            Image("tabIcon")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 40, height: 40)
+                            
+                            Image(systemName: "xmark")
+                                .foregroundStyle(.white)
+                                .bold()
+                                .padding(.bottom, 6)
+                        }
+                    }
+                    .padding(.top, 5)
+                    
+                    Spacer()
                     
                     Text("Reservations")
                         .foregroundStyle(.white)
@@ -31,15 +45,8 @@ struct SavedReservesView: View {
                     
                     Spacer()
                     
-                    Button {
-                        isNotifShown.toggle()
-                    } label: {
-                        Image(systemName: "bell")
-                    }
-                    .foregroundStyle(.white)
-                    .padding(.trailing, 20)
                 }
-                .padding(.leading)
+                .padding(.horizontal)
                 
                 if !reservations.isEmpty {
                     ScrollView {
